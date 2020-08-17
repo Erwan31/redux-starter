@@ -56,7 +56,7 @@ console.log(updated3, book);
 */
 
 import store from './store';
-import { bugAdded } from './actions';
+import { bugAdded, bugResolved } from './actions';
 
 /*
 const unsubscribe = store.subscribe( () => {
@@ -65,6 +65,7 @@ const unsubscribe = store.subscribe( () => {
 */
 
 store.dispatch(bugAdded("add bug 1"));
+store.dispatch(bugResolved("resolve bug 1"));
 
 /*
 store.dispatch({
